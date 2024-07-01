@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet Ms', Arial, Helvetica, sans-serif;
+}
+
+header{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1{
+    margin: 0;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+#dropzone{
+    padding: 5px 40px;
+    background: #ccc;
+}
+#dropzone p{
+    padding: 20px 10px;
+    background: white;
+    text-align: center;
+    border: 2px dashed #333;
+}
+
+#dropzone label{
+    border-bottom: 1px solid blue;
+    color: blue;
+    cursor: pointer;
+}
+
+#dropzone input{
+    display: none;
+}
+
+#fotos{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#fotos img{
+    height: 100px;
+}
