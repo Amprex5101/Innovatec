@@ -20,51 +20,43 @@
     </header>
 
     <main>
-        <div class="main-container">
-            <div class="container1">
-                <div class="steps-box">
-                    <div class="steps">
-                        <ol>
-                            <li class="step">
-                                <div class="circle">1</div>
-                                Regístrate
-                            </li>
-                            <li class="step">
-                                <div class="circle">2</div>
-                                Añade tu documento de prueba
-                            </li>
-                            <li class="step">
-                                <div class="circle">3</div>
-                                Comienza a probar
-                            </li>
-                        </ol>
-                        <button class="btn">Siguiente</button>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="steps">
+                <ol>
+                    <li class="step">
+                        <div class="circle">1</div>
+                        Regístrate
+                    </li>
+                    <li class="step active">
+                        <div class="circle">2</div>
+                        Añade tu documento de prueba
+                    </li>
+                    <li class="step">
+                        <div class="circle">3</div>
+                        Comienza a probar
+                    </li>
+                </ol>
+                <button class="btn">Siguiente</button>
             </div>
             
-            <div class="container2">
-                <div class="upload-section">
-                    <div id="dropzone">
-                        <img src="upload-icon.png" alt="Upload Icon" class="upload-icon">
-                        <p>Arrastre los archivos a esta zona <label for="archivos">o haga click aquí</label></p>
-                        <input type="file" id="archivos" name="archivos" multiple />
-                    </div>
-                    <form>
-                        <label for="bot-name">Nombre del bot</label>
-                        <input type="text" id="bot-name" name="bot-name">
-                        
-                        <label for="instructions">Instrucciones</label>
-                        <textarea id="instructions" name="instructions"></textarea>
-                        
-                        <label for="conversation-start">Inicio de conversación</label>
-                        <input type="text" id="conversation-start" name="conversation-start">
-                    </form>
+            <div class="upload-section">
+                <div id="dropzone">
+                    <img src="upload-icon.png" alt="Upload Icon" class="upload-icon">
+                    <p>Arrastre los archivos a esta zona <label for="archivos">o haga click aquí</label></p>
+                    <input type="file" id="archivos" name="archivos" multiple />
                 </div>
+                <form>
+                    <label for="bot-name">Nombre del bot</label>
+                    <input type="text" id="bot-name" name="bot-name">
+                    
+                    <label for="instructions">Instrucciones</label>
+                    <textarea id="instructions" name="instructions"></textarea>
+                    
+                    <label for="conversation-start">Inicio de conversación</label>
+                    <input type="text" id="conversation-start" name="conversation-start">
+                </form>
             </div>
         </div>
-
-
 
         <ul id="fotos">
         <?php 
