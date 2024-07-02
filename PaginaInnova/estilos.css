@@ -39,12 +39,7 @@ header nav ul li img.logo {
     margin: 20px auto;
     width: 100%;
     gap: 2cm;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('ruta/a/tu/imagen.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 20px;
+    
 
 
 }
