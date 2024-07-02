@@ -8,3 +8,4 @@ foreach( $archivos['tmp_name'] as $indice => $tmp_name ){
 
 $contenido = glob( "uploads/*" );
 echo json_encode( $contenido );
+//Jjj
