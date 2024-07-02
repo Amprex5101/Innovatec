@@ -39,7 +39,8 @@
                 <button class="btn">Siguiente</button>
             </div>
         </div>
-        <div class="container2"></div>
+        
+        <div class="container2">
             <div class="upload-section">
                 <div id="dropzone">
                     <img src="upload-icon.png" alt="Upload Icon" class="upload-icon">
