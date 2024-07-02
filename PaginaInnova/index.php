@@ -20,7 +20,7 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container1">
             <div class="steps">
                 <ol>
                     <li class="step">
@@ -38,7 +38,8 @@
                 </ol>
                 <button class="btn">Siguiente</button>
             </div>
-            
+        </div>
+        <div class="container2"></div>
             <div class="upload-section">
                 <div id="dropzone">
                     <img src="upload-icon.png" alt="Upload Icon" class="upload-icon">
@@ -57,6 +58,7 @@
                 </form>
             </div>
         </div>
+
 
         <ul id="fotos">
         <?php 
