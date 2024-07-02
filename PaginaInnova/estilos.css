@@ -37,7 +37,7 @@ header nav ul li img.logo {
     display: flex;
     justify-content: space-between;
     margin: 20px auto;
-    width: 100%;
+    width: 160%;
     gap: 2cm;
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('ruta/a/tu/imagen.jpg');
     background-size: cover;
