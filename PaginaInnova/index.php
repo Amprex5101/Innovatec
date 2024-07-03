@@ -15,6 +15,7 @@
         <nav>
             <ul>
                 <li><img src="img/logo.png" alt="Logo" class="logo"></li>
+                <li><img src="img/logo.png" alt="Logo" class="logo"></li>
                 <li>Planes</li>
                 <li>Nosotros</li>
                 <li>Contacto</li>
@@ -23,6 +24,27 @@
     </header>
 
     <main>
+        <div class="main-container">
+            <div class="container1">
+                <div class="steps-box">
+                    <div class="steps">
+                        <ol>
+                            <li class="step">
+                                <div class="circle">1</div>
+                                Regístrate
+                            </li>
+                            <li class="step">
+                                <div class="circle">2</div>
+                                Añade tu documento de prueba
+                            </li>
+                            <li class="step">
+                                <div class="circle">3</div>
+                                Comienza a probar
+                            </li>
+                        </ol>
+                        <button class="btn">Siguiente</button>
+                    </div>
+                </div>
         <div class="main-container">
             <div class="container1">
                 <div class="steps-box">
