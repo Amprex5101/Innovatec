@@ -32,7 +32,7 @@ header nav ul li img.logo {
     height: 60px;
 }
 
-.main-container {
+
 .main-container {
     display: flex;
     flex-direction: row; /* Cambiado para alinear en vertical */
@@ -60,8 +60,7 @@ header nav ul li img.logo {
     border: 2px solid #3498db; /* Border */
 }
 
-.container2 {
-    background-color: #ffffff; /* Color de fondo diferente para el segundo contenedor */
+
 .container2 {
     background-color: #ffffff; /* Color de fondo diferente para el segundo contenedor */
     border-radius: 10px;
