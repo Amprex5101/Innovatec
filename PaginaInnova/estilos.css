@@ -39,13 +39,24 @@ header nav ul li img.logo {
     gap: 2cm; /* Espacio entre los contenedores */
 }
 
-.container1, .container2 {
+.container1 {
     background-color: #f0f2f5; /* Color de fondo del contenedor */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
-    width: 100%;
+    flex: 1;
+    border: 2px solid #3498db; /* Border specific to container1 */
 }
+
+.container2 {
+    background-color: #ffffff; /* Color de fondo diferente para el segundo contenedor */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1;
+    border: 2px dashed #e74c3c; /* Border specific to container2 */
+}
+
 
 .steps {
     display: flex;
