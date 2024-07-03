@@ -46,7 +46,7 @@
             <div class="container2">
                 <div class="upload-section">
                     <div id="dropzone">
-                        <img src="upload-icon.png" alt="Upload Icon" class="upload-icon">
+                        <img src="img/upload-icon.png" alt="Upload Icon" class="upload-icon">
                         <p>Arrastre los archivos a esta zona <label for="archivos">o haga click aquí</label></p>
                         <input type="file" id="archivos" name="archivos" multiple />
                     </div>
