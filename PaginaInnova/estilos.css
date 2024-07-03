@@ -27,7 +27,7 @@ header nav ul li {
 }
 
 header nav ul li img.logo {
-    height: 50px;
+    height: 60px;
 }
 
 .main-container {
@@ -36,7 +36,7 @@ header nav ul li img.logo {
     align-items: apace-between;
     margin: 20px auto;
     width: 80%;
-    gap: 2cm; /* Espacio entre los contenedores */
+    gap: 1cm; /* Espacio entre los contenedores */
 }
 
 .container1 {
@@ -45,7 +45,7 @@ header nav ul li img.logo {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
     flex: 1;
-    border: 2px solid #3498db; /* Border specific to container1 */
+    border: 2px solid #3498db; /* Border */
 }
 
 .container2 {
@@ -54,7 +54,7 @@ header nav ul li img.logo {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
     flex: 1;
-    border: 2px dashed #e74c3c; /* Border specific to container2 */
+    border: 2px solid #3498db; /* Border specific to container2 */
 }
 
 
