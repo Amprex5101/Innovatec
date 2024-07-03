@@ -11,7 +11,7 @@
     <header>
         <nav>
             <ul>
-                <li><img src="logo.png" alt="Logo" class="logo"></li>
+                <li><img src="img/logo.png" alt="Logo" class="logo"></li>
                 <li>Planes</li>
                 <li>Nosotros</li>
                 <li>Contacto</li>
@@ -41,7 +41,7 @@
             
             <div class="upload-section">
                 <div id="dropzone">
-                    <img src="upload-icon.png" alt="Upload Icon" class="upload-icon">
+                    <img src="img/upload-icon.png" alt="Upload Icon" class="upload-icon">
                     <p>Arrastre los archivos a esta zona <label for="archivos">o haga click aquí</label></p>
                     <input type="file" id="archivos" name="archivos" multiple />
                 </div>
