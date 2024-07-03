@@ -82,7 +82,7 @@ header nav ul li img.logo {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #e0e0e0;
+    background-color: #98ddf6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +128,7 @@ header nav ul li img.logo {
 }
 
 .upload-icon {
-    height: 50px;
+    height: 90px;
     margin-bottom: 20px;
 }
 
