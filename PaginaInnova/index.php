@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="CSS/documentos.css">
     <title>INTERAI</title>
 </head>
-
 <body>
     <header>
         <nav>
@@ -44,10 +42,11 @@
                         <button class="btn">Siguiente</button>
                     </div>
                 </div>
-
+            </div>
+            
             <div class="container2">
                 <div class="upload-section">
-                    <div id="dropzone">
+                <div id="dropzone">
                         <!-- Puse un div distinto para cargar todos los documentos que se vayan agregando-->
                         <div id="file-list">
                             <?php include 'HerramientasPHP/load_files.php'; ?>
@@ -58,10 +57,10 @@
                     <form>
                         <label for="bot-name">Nombre del bot</label>
                         <input type="text" id="bot-name" name="bot-name">
-
+                        
                         <label for="instructions">Instrucciones</label>
                         <textarea id="instructions" name="instructions"></textarea>
-
+                        
                         <label for="conversation-start">Inicio de conversación</label>
                         <input type="text" id="conversation-start" name="conversation-start">
                     </form>
@@ -71,5 +70,4 @@
         <script src="script.js"></script>
     </main>
 </body>
-
 </html>
