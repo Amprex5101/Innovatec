@@ -61,7 +61,9 @@ header nav ul li img.logo {
 .steps {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 0;
 }
 
 .steps ol {
@@ -83,10 +85,13 @@ header nav ul li img.logo {
     height: 30px;
     border-radius: 50%;
     background-color: #98ddf6;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+    transition: background-color 0.3s;
+
 }
 
 .steps ol li.active .circle {
@@ -96,9 +101,11 @@ header nav ul li img.logo {
 
 .steps ol li.active {
     font-weight: bold;
-    border-left: 4px solid #3498db;
+    color: blue;
+    transition: color 0.3s, font-weight 0.3s;
+    /*border-left: 4px solid #3498db;
     background-color: #f0f4ff;
-    border-radius: 5px;
+    border-radius: 5px;*/
 }
 
 .btn {

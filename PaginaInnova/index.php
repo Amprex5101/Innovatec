@@ -74,6 +74,9 @@
         </ul>
 
         <script src="script.js"></script>
+        <script src="click.js"></script>
+
+
     </main>
 </body>
 </html>
