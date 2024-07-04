@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="CSS/estilos.css" />
+    <link rel="stylesheet" href="CSS/documentos.css">
     <title>INTERAI</title>
 </head>
 <body>
@@ -45,8 +46,11 @@
             
             <div class="container2">
                 <div class="upload-section">
-                    <div id="dropzone">
-                        <img src="img/upload-icon.png" alt="Upload Icon" class="upload-icon">
+                <div id="dropzone">
+                        <!-- Puse un div distinto para cargar todos los documentos que se vayan agregando-->
+                        <div id="file-list">
+                            <?php include 'HerramientasPHP/load_files.php'; ?>
+                        </div>
                         <p>Arrastre los archivos a esta zona <label for="archivos">o haga click aquí</label></p>
                         <input type="file" id="archivos" name="archivos" multiple />
                     </div>
@@ -63,16 +67,6 @@
                 </div>
             </div>
         </div>
-
-        <ul id="fotos">
-        <?php 
-            $contenido = glob( "uploads/*" );
-            foreach($contenido as $imagen){
-                echo "<li><img src='$imagen' alt='' /></li>";
-            }
-        ?>
-        </ul>
-
         <script src="script.js"></script>
         <script src="click.js"></script>
 
