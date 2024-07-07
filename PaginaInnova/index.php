@@ -12,7 +12,8 @@
     <header>
         <nav>
             <ul>
-                <li><img src="img/logo.png" alt="Logo" class="logo"></li>
+                <li><img src="img/logo.png" alt="Logo" class="logo">InterAI</li>
+                <span class="spacer"></span>
                 <li>Planes</li>
                 <li>Nosotros</li>
                 <li>Contacto</li>
@@ -27,19 +28,19 @@
                     <div class="steps">
                         <ol>
                             <li class="step">
-                                <div class="circle">1</div>
-                                Regístrate
+                                <div class="circle" id="1">1</div>
+                                <div id="step1">Regístrate</div>
+                                </li>
+                            <li class="step">
+                                <div class="circle" id="2">2</div>
+                                <div id="step2">Añade tu documento de prueba</div>
                             </li>
                             <li class="step">
-                                <div class="circle">2</div>
-                                Añade tu documento de prueba
-                            </li>
-                            <li class="step">
-                                <div class="circle">3</div>
-                                Comienza a probar
-                            </li>
+                                <div class="circle" id="3">3</div>
+                                <div id="step3">Comienza a probar</div>
+                                </li>
                         </ol>
-                        <button class="btn">Siguiente</button>
+                        <button class="btn" id="nextBtn">Siguiente</button>
                     </div>
                 </div>
             </div>
@@ -72,5 +73,7 @@
 
 
     </main>
+ <div class="circlebody circle1"></div>
+ <div class="circlebody circle2"></div>
 </body>
 </html>
