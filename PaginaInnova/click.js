@@ -1,20 +1,43 @@
-const steps = [
-    { circle: document.getElementById('1'), content: document.getElementById('step1') },
-    { circle: document.getElementById('2'), content: document.getElementById('step2') },
-    { circle: document.getElementById('3'), content: document.getElementById('step3') }
-];
+document.addEventListener('DOMContentLoaded', function() {
+    const steps = document.querySelectorAll('.steps ol li');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentStep = 0;
 
-let currentStep = 0;
-
-document.getElementById('nextBtn').addEventListener('click', function() {
-    if (currentStep < steps.length - 1) {
-        steps[currentStep].circle.classList.remove('active');
-        currentStep++;
-        steps[currentStep].circle.classList.add('active');
-    } else {
-        steps[currentStep].circle.classList.remove('active');
-        currentStep = 0;
-        steps[currentStep].circle.classList.add('active');}
+    // Función para actualizar los pasos
+    function updateSteps() {
+        steps.forEach((step, index) => {
+            if (index === currentStep) {
+                step.classList.add('active');
+            } else {
+                step.classList.remove('active');
+            }
         });
+    }
 
+    // Inicializa los pasos
+    updateSteps();
+
+    // Manejar el clic del botón "Siguiente"
+    nextBtn.addEventListener('click', function() {
+        if (currentStep < steps.length - 1) {
+            currentStep++;
+            updateSteps();
+        }
+        if (currentStep >= steps.length) {
+            currentStep++;
+        }
+        updateSteps();
+
+    });
+     // Manejar el clic del botón "Anterior"
+     prevBtn.addEventListener('click', function() {
+        if (currentStep  > 0) {
+            currentStep--;
+            updateSteps();
+        }
+        
+    });
+
+});
 

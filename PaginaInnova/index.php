@@ -12,12 +12,13 @@
     <header>
         <nav>
             <ul>
-                <li><img src="img/logo.png" alt="Logo" class="logo">InterAI</li>
+                <li><img src="img/logo.png" alt="Logo" class="logo">
+                <li>InterAI</li>
                 <span class="spacer"></span>
                 <li>Planes</li>
                 <li>Nosotros</li>
                 <li>Contacto</li>
-            </ul>
+            </ul
         </nav>
     </header>
 
@@ -28,19 +29,24 @@
                     <div class="steps">
                         <ol>
                             <li class="step">
-                                <div class="circle" id="1">1</div>
+                                <div class="circle">1</div>
                                 <div id="step1">Regístrate</div>
                                 </li>
                             <li class="step">
-                                <div class="circle" id="2">2</div>
-                                <div id="step2">Añade tu documento de prueba</div>
+                                <div class="circle">2</div>
+                                <div id="step">Añade tu documento de prueba</div>
                             </li>
                             <li class="step">
-                                <div class="circle" id="3">3</div>
+                                <div class="circle">3</div>
                                 <div id="step3">Comienza a probar</div>
                                 </li>
                         </ol>
-                        <button class="btn" id="nextBtn">Siguiente</button>
+                        <div class="containerbtn">
+                        <button class="btn1" id="prevBtn">Anterior</button>
+                        <button class="btn2" id="nextBtn">Siguiente</button></div>
+                    
+                        
+                        <img src="img/inferior.png" alt="inf" class="imginf">
                     </div>
                 </div>
             </div>
@@ -56,10 +62,10 @@
                         <input type="file" id="archivos" name="archivos" multiple />
                     </div>
                     <form>
-                        <label for="bot-name">Nombre del bot</label>
+                        <label for="bot-name">Nombre del bot:</label>
                         <input type="text" id="bot-name" name="bot-name">
                         
-                        <label for="instructions">Instrucciones</label>
+                        <label for="instructions">Instrucciones:</label>
                         <textarea id="instructions" name="instructions"></textarea>
                         
                         <label for="conversation-start">Inicio de conversación</label>
