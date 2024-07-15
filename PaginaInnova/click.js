@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const steps = document.querySelectorAll('.steps ol li');
+    const stepContents = document.querySelectorAll('.step-content');
+
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     let currentStep = 0;
@@ -9,8 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
         steps.forEach((step, index) => {
             if (index === currentStep) {
                 step.classList.add('active');
+                stepContents[index].style.display = 'block';
+
+
             } else {
                 step.classList.remove('active');
+                stepContents[index].style.display = 'none';
+
             }
         });
     }

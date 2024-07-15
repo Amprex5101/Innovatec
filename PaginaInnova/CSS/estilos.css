@@ -95,8 +95,7 @@ header nav ul li img.logo {
     margin-top: 30px;
     margin-bottom: 30px;
     border: 2px solid #979797; /* Border specific to container2 */
-    width: 300px;  
-      
+    width: 300px;      
 }
 
 .steps {
@@ -143,7 +142,7 @@ header nav ul li img.logo {
 
 .steps ol li.active .circle {
     background-color: #401286;
-    color: #ffffff;  
+    color: #080808;  
 }
 .steps ol li.active {
     font-weight: bold;
@@ -206,7 +205,7 @@ header nav ul li img.logo {
 
 #dropzone {
     padding: 20px;
-    border-radius: 60px;
+    border-radius: 10px;
     text-align: center;
     margin-bottom: 20px;
     background-color: #979797;
@@ -228,17 +227,191 @@ form {
     flex-direction: column;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
-
 }
-
 form label {
     margin: 7px 0 10px;
 }
-
 form input, form textarea {
     padding: 10px;
     border: 1px solid #979797;
     border-radius: 5px;
     margin-bottom: 10px;
     font-weight: 1000;
+}
+
+/* Diseño del Paso 1 */
+#step-content-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+    height: 100px;  
+}
+
+#step-content-1 .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px; /* Ajustar el espacio entre los grupos de formulario */
+    height: 100px;
+}
+
+#step-content-1 .form-group.full-width {
+    width: 100%;
+}
+
+#step-content-1 .form-group label {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px; /* Añadir margen inferior a las etiquetas */
+}
+
+#step-content-1 .form-group input,
+#step-content-1 .form-group select {
+    padding: 10px;
+    border: 1px solid #979797;
+    border-radius: 5px;
+    font-family: Verdana;
+    font-size: 16px;
+    margin-bottom: 10px; /* Añadir margen inferior a los campos */
+}
+#step-content-1 .form-row {
+    display: flex;
+    gap: 20px; /* Añadir espacio entre los campos de la misma fila */
+}
+
+#step-content-1 .form-field {
+    flex: 1; /* Hacer que los campos ocupen el mismo ancho */
+    display: flex;
+    flex-direction: column;
+}
+
+#step-content-1 .form-group .phone-input {
+    display: flex;
+    gap: 10px;
+}
+
+#step-content-1 .form-group .phone-input select {
+    width: 60px;
+}
+
+#step-content-1 .form-group .phone-input input {
+    flex: 1;
+}
+
+/* Para mejorar la apariencia del formulario */
+#step-content-1 .form-group .phone-input select,
+#step-content-1 .form-group input[type="text"],
+#step-content-1 .form-group input[type="email"],
+#step-content-1 .form-group input[type="tel"],
+#step-content-1 .form-group select {
+    padding: 20px;
+    border: 1px solid #979797;
+    border-radius: 17px;
+    font-family: Verdana;
+    font-size: 16px;
+    display: flex;
+}
+
+
+/* Diseño del Paso 3 */
+#step-content-3 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #979797;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #401286;
+    color: #ffffff;
+}
+
+.chat-header .user-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-header .user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header .user-info .user-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.chat-header .user-info .user-status {
+    font-size: 14px;
+    color: #d4d4d4;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.chat-messages .message {
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.chat-messages .message.received {
+    background-color: #e1e1e1;
+    align-self: flex-start;
+}
+
+.chat-messages .message.sent {
+    background-color: #d1d1f9;
+    align-self: flex-end;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input .message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #979797;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-family: Verdana;
+}
+
+.chat-input .send-button {
+    background-color: #401286;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.chat-input .send-button:hover {
+    background-color: #370f6b;
 }

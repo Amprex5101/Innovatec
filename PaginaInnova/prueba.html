@@ -52,12 +52,77 @@
             </div>
             
             <div class="container2">
+                
+                <!--contenedor del paso 1...-->
+                <div class="step-content" id="step-content-1">
+                    <form>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" id="nombre" name="nombre">
+                                </div>
+                                <div class="form-field">
+                                    <label for="apellidos">Apellidos</label>
+                                    <input type="text" id="apellidos" name="apellidos">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="correo">Correo de la empresa:</label>
+                            <input type="email" id="correo" name="correo">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Número de teléfono</label>
+                            <div class="phone-input">
+                                <select>
+                                    <option value="+">+</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <input type="tel" id="telefono" name="telefono">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="empresa">Nombre de la empresa</label>
+                            <input type="text" id="empresa" name="empresa">
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="rol">Rol</label>
+                                    <input type="text" id="rol" name="rol">
+                                </div>
+                                <div class="form-field">
+                                    <label for="empleados">Num. Empleados</label>
+                                    <select id="empleados" name="empleados">
+                                        <option value="1-10">1-10</option>
+                                        <option value="11-50">11-50</option>
+                                        <option value="51-200">51-200</option>
+                                        <option value="201-500">201-500</option>
+                                        <option value="500+">500+</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <!--contenedor del paso 2...-->
+
+                <div class="step-content" id="step-content-2" style="display: none;">
                 <div class="upload-section">
                 <div id="dropzone">
                         <!-- Puse un div distinto para cargar todos los documentos que se vayan agregando-->
                         <div id="file-list">
                             <?php include 'HerramientasPHP/load_files.php'; ?>
                         </div>
+                        <img src="img/upload-icon.png" alt="upload-ico" class="upload-ico">
+
                         <p>Arrastre los archivos a esta zona <label for="archivos">o haga click aquí</label></p>
                         <input type="file" id="archivos" name="archivos" multiple />
                     </div>
@@ -71,6 +136,31 @@
                         <label for="conversation-start">Inicio de conversación</label>
                         <input type="text" id="conversation-start" name="conversation-start">
                     </form>
+                </div>
+                <!--contenedor del paso 3...-->
+                <div class="step-content" id="step-content-3" style="display: none;">
+                    <div class="chat-container">
+                        <div class="chat-header">
+                            <img src="img/user.png" alt="User" class="user-icon">
+                            <div class="user-info">
+                                <span class="user-name">Chatbot</span>
+                                <span class="user-status">Online</span>
+                            </div>
+                        </div>
+                        <div class="chat-messages">
+                            <!-- Sample messages -->
+                            <div class="message received">
+                                <p>Hello! How can I help you today?</p>
+                            </div>
+                            <div class="message sent">
+                                <p>Hi, I need some information.</p>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Type a message" class="message-input">
+                            <button class="send-button">Send</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
