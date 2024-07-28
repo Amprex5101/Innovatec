@@ -225,11 +225,13 @@ header nav ul li img.logo {
 form {
     display: flex;
     flex-direction: column;
-    font-weight: 600;
+    font-weight: 600px;
     font-family: Arial, Helvetica, sans-serif;
 }
 form label {
     margin: 7px 0 10px;
+    font-weight: bold;  
+
 }
 form input, form textarea {
     padding: 10px;
@@ -244,65 +246,175 @@ form input, form textarea {
     display: flex;
     flex-direction: column;
     margin: 10px 50px;
-    height: 100px;  
 }
 
-#step-content-1 .form-group {
+.correo { 
     display: flex;
     flex-direction: column;
     margin-bottom: 0px; /* Ajustar el espacio entre los grupos de formulario */
-    height: 100px;
+    width: 100%;
+
+}
+.correo label {/*letras*/
+    color: #000000;
+    margin-bottom: 5px; /* Añadir margen inferior a las etiquetas */
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-weight: bold;  
+
+}
+.correo input[type="email"] {
+    padding: 5px;
+    border: 1px solid #979797;
+    border-radius: 17px;
+    max-width: 600px;
+    height: 45px;
+    min-width: 310px;
 }
 
-#step-content-1 .form-group.full-width {
+.nombre { 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px; /* Ajustar el espacio entre los grupos de formulario */
     width: 100%;
 }
 
-#step-content-1 .form-group label {
-    font-weight: bold;
+.nombre label {/*letras*/
     color: #000000;
     margin-bottom: 5px; /* Añadir margen inferior a las etiquetas */
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+.nombre input[type="text"] {
+    padding: 5px;
+    border: 1px solid #979797;
+    border-radius: 17px;
+    max-width: 600px;
+    height: 45px;
+    min-width: 310px;
 }
 
-#step-content-1 .form-group input,
-#step-content-1 .form-group select {
+.Numero { /*correo y nombre*/
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px; /* Ajustar el espacio entre los grupos de formulario */
+    width: 100%;
+}
+.Numero label {
+    color: #000000;
+    margin-bottom: 5px; /* Añadir margen inferior a las etiquetas */
+    width: 100%;
+    display: block;
+    font-weight: bold;  
+}
+.phone-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 250px;
+}
+.Numero .phone-input select {
     padding: 10px;
     border: 1px solid #979797;
-    border-radius: 5px;
+    border-radius: 15px;
     font-family: Verdana;
     font-size: 16px;
     margin-bottom: 10px; /* Añadir margen inferior a los campos */
-}
-#step-content-1 .form-row {
     display: flex;
-    gap: 20px; /* Añadir espacio entre los campos de la misma fila */
+    height: 55px; 
+    cursor: pointer;   
 }
 
-#step-content-1 .form-field {
-    flex: 1; /* Hacer que los campos ocupen el mismo ancho */
+.Numero .phone-input input[type="tel"] {
+    padding: 5px;
+    border: 1px solid #979797;
+    border-radius: 17px;
+    width: 99%;
+    height: 45px;
+    min-width: 210px;
+}
+   
+.Empleados select {
+    border: none;
+    padding: 50px;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 5px;
+    max-width: 110px;
+    min-width: 80px; 
+    border: 1px solid #979797;
+    cursor: pointer; 
+    appearance: menulist; 
+}
+
+ .form-row {
+    display: flex;
+    gap: 10px; /* Añadir espacio entre los campos de la misma fila */
+    width: 100%; /* Asegura que la fila use todo el ancho del contenedor */
+    flex: 1;}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 155px; /* Para evitar que se reduzcan demasiado */
+    width: 100%;
+}
+
+ .form-group{
+    display: flex;
+    margin-bottom: 0px;
+    flex-direction: column;
+    align-items: flex-start;}
+
+ .Roles {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;}
+
+
+.Rol{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px; /* Espacio entre Rol y No. Empleados */
+    flex: 1;}
+
+ .Roles .Empleados label{
+    display: inline-block;
+    white-space: nowrap; /* Evita el salto de línea */
+}
+ .Roles .Rol label, .Roles .Empleados label {
+    color: #000000;
+    margin-bottom: 5px; /* Añadir margen inferior a las etiquetas */
+    display: block;
+}
+ 
+ .form-group .Roles .Rol label{
+    color: #000000;
+    margin-bottom: 10px; /* Añadir margen inferior a las etiquetas */
+    width: 100%;
+    display: block; 
+ }
+
+ .form-group .Roles input {
+    padding: 5px;
+    border: 1px solid #979797;
+    border-radius: 17px;
+    width: 100%;
+    height: 20px;
+    min-width: 10%;
     display: flex;
     flex-direction: column;
 }
 
-#step-content-1 .form-group .phone-input {
-    display: flex;
-    gap: 10px;
-}
 
-#step-content-1 .form-group .phone-input select {
-    width: 60px;
-}
 
-#step-content-1 .form-group .phone-input input {
-    flex: 1;
-}
-
-/* Para mejorar la apariencia del formulario */
-#step-content-1 .form-group .phone-input select,
-#step-content-1 .form-group input[type="text"],
-#step-content-1 .form-group input[type="email"],
-#step-content-1 .form-group input[type="tel"],
-#step-content-1 .form-group select {
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group select {
     padding: 20px;
     border: 1px solid #979797;
     border-radius: 17px;
@@ -311,107 +423,6 @@ form input, form textarea {
     display: flex;
 }
 
-
 /* Diseño del Paso 3 */
-#step-content-3 {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 
-.chat-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    border: 1px solid #979797;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    overflow: hidden;
-}
 
-.chat-header {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    background-color: #401286;
-    color: #ffffff;
-}
-
-.chat-header .user-icon {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.chat-header .user-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.chat-header .user-info .user-name {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.chat-header .user-info .user-status {
-    font-size: 14px;
-    color: #d4d4d4;
-}
-
-.chat-messages {
-    flex: 1;
-    padding: 15px;
-    overflow-y: auto;
-    background-color: #f9f9f9;
-}
-
-.chat-messages .message {
-    padding: 10px 15px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    max-width: 80%;
-}
-
-.chat-messages .message.received {
-    background-color: #e1e1e1;
-    align-self: flex-start;
-}
-
-.chat-messages .message.sent {
-    background-color: #d1d1f9;
-    align-self: flex-end;
-}
-
-.chat-input {
-    display: flex;
-    padding: 10px 15px;
-    background-color: #ffffff;
-    border-top: 1px solid #ddd;
-}
-
-.chat-input .message-input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #979797;
-    border-radius: 20px;
-    margin-right: 10px;
-    font-family: Verdana;
-}
-
-.chat-input .send-button {
-    background-color: #401286;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: Verdana;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.chat-input .send-button:hover {
-    background-color: #370f6b;
-}
